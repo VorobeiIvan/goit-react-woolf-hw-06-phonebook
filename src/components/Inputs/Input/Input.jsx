@@ -1,11 +1,13 @@
+import React from 'react';
+
 const Input = ({ inputProps }) => {
   const {
     label,
     className,
     type,
     name,
-    value,
-    onChange,
+    // value,
+    // onChange,
     pattern,
     title,
     required,
@@ -19,8 +21,8 @@ const Input = ({ inputProps }) => {
         className={`input ${className}`}
         type={type}
         name={name}
-        value={value}
-        onChange={onChange}
+        // value={value || ''}
+        // onChange={onChange || (() => {})}
         pattern={pattern}
         title={title}
         required={required}
