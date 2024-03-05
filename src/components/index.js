@@ -1,6 +1,6 @@
 import Section from './Section/Section';
 import ContactForm from './ContactForm/ContactForm';
-import ContactList from './ContactList/ContactList';
+import ContactList from './ContactListItem/ContactListItem';
 import Filter from './Inputs/FilterComponent/FilterComponent';
 import { formSubmitHandler, deleteContact } from '../utils/contactUtils';
 import { changeFilter } from '../utils/filterUtils';

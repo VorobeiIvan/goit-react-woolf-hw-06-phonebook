@@ -1,8 +1,8 @@
-const ContactListItem = ({ contact, onDelete }) => {
+const ContactListItem = ({ id, name, number, onDelete }) => {
   return (
-    <li key={contact.id} className="contact-item">
-      {contact.name}: {contact.number}
-      <button className="btn-del" onClick={() => onDelete(contact.id)}>
+    <li className="contact-item">
+      {name}: {number}
+      <button className="btn-del" onClick={() => onDelete(id)}>
         Delete
       </button>
     </li>

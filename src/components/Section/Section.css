@@ -1,0 +1,19 @@
+.section {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.section-title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #ccc;
+}

@@ -1,7 +1,7 @@
 import Input from './Input/Input';
-import NameInput from './NameInputComponent/NameInputComponent';
-import NumberInput from './NumberInputComponent/NumberInputComponent';
-import Filter from './FilterComponent/FilterComponent';
+import NameInputComponent from './NameInputComponent/NameInputComponent';
+import NumberInputComponent from './NumberInputComponent/NumberInputComponent';
+import FilterComponent from './FilterComponent/FilterComponent';
 import {
   FilterConstantProps,
   NameInputComponentProps,
@@ -12,9 +12,9 @@ import { changeFilter } from 'utils/filterUtils';
 
 export {
   Input,
-  NameInput,
-  NumberInput,
-  Filter,
+  NameInputComponent,
+  NumberInputComponent,
+  FilterComponent,
   formSubmitHandler,
   deleteContact,
   changeFilter,
