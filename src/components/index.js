@@ -1,31 +1,21 @@
-import Section from './Section/Section';
-import ContactForm from './ContactForm/ContactForm';
-import ContactList from './ContactListItem/ContactListItem';
-import Filter from './Inputs/FilterComponent/FilterComponent';
-import { formSubmitHandler, deleteContact } from '../utils/contactUtils';
-import { changeFilter } from '../utils/filterUtils';
-import {
-  FilterConstantProps,
-  NameInputComponentProps,
-  NumberInputComponentProps,
-} from '../utils/InputProps';
-import Input from './Inputs/NameInputComponent/NameInputComponent';
-import NumberInput from './Inputs/NumberInputComponent/NumberInputComponent';
-import { useState, useEffect } from 'react';
+import ContactsForm from './InputSection/ContactForm';
+import Section from './Elements/Section/Section';
+import FilterForm from './FilteSection/FilterSection';
+import App from './App';
+import Form from './Elements/Form/Form';
+import Button from './Elements/Button/Button.jsx';
+import Input from './Elements/Input/Input';
+import ContactListItem from './FilteSection/ContactListItem/ContactListItem';
+import ContactList from './FilteSection/ContactList/ContactList';
 
 export {
+  ContactsForm,
+  App,
   Section,
-  ContactForm,
-  ContactList,
-  Filter,
-  formSubmitHandler,
-  deleteContact,
-  changeFilter,
-  FilterConstantProps,
-  NameInputComponentProps,
-  NumberInputComponentProps,
+  FilterForm,
+  Form,
+  Button,
   Input,
-  NumberInput,
-  useState,
-  useEffect,
+  ContactListItem,
+  ContactList,
 };

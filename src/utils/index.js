@@ -1,16 +1,16 @@
 import {
-  FilterConstantProps,
-  NameInputComponentProps,
-  NumberInputComponentProps,
-} from 'utils/InputProps';
-import { formSubmitHandler, deleteContact } from 'utils/contactUtils';
-import { changeFilter } from 'utils/filterUtils';
+  PhoneNumberInputProps,
+  NameInputProps,
+  FilterProps,
+} from './InputProps';
+import { ButtonSubmitProps } from './ButtonProps';
+import { createContactsList } from './contactUtils';
+
 
 export {
-  formSubmitHandler,
-  deleteContact,
-  changeFilter,
-  FilterConstantProps,
-  NameInputComponentProps,
-  NumberInputComponentProps,
+  PhoneNumberInputProps,
+  NameInputProps,
+  FilterProps,
+  ButtonSubmitProps,
+  createContactsList
 };
