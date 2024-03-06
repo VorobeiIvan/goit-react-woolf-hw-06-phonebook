@@ -1,5 +1,5 @@
 import { ContactListItem } from 'components';
-function createContactsList({ contacts = [] }) {
+function createContactsListItems({ contacts = [] }) {
   return contacts.map(contact => (
     <ContactListItem
       key={contact.id}
@@ -9,4 +9,4 @@ function createContactsList({ contacts = [] }) {
   ));
 }
 
-export { createContactsList };
+export { createContactsListItems };

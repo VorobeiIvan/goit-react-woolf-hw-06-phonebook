@@ -4,7 +4,7 @@ import {
   FilterProps,
 } from './InputProps';
 import { ButtonSubmitProps } from './ButtonProps';
-import { createContactsList } from './contactUtils';
+import { createContactsListItems } from './contactUtils';
 
 
 export {
@@ -12,5 +12,5 @@ export {
   NameInputProps,
   FilterProps,
   ButtonSubmitProps,
-  createContactsList
+  createContactsListItems
 };

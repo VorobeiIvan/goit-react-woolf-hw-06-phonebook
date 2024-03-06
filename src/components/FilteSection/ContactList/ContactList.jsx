@@ -1,8 +1,8 @@
-import { createContactsList } from 'utils';
+import { createContactsListItems } from 'utils';
 const ContactList = () => {
   return (
     <ul className="contact-list">
-      {createContactsList()}
+      {createContactsListItems({ contacts: [] })}
     </ul>
   );
 };
