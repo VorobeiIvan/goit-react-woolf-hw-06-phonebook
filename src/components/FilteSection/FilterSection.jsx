@@ -3,8 +3,7 @@ import { FilterProps } from 'utils';
 
 const FilterForm = () => {
   return (
-    <Section>
-      <h2>Contacts</h2>
+    <Section title="Contacts">
       <Form>
         <Input {...FilterProps} />
       </Form>

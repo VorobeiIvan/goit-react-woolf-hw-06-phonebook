@@ -1,5 +1,6 @@
 const Input = InputProps => {
-  const { type, name, value, placeholder, pattern, title } = InputProps;
+  const { type, name, value, placeholder, pattern, title, onChange } =
+    InputProps;
   return (
     <div className="wrapper">
       <label className="label">{name}</label>
@@ -9,6 +10,7 @@ const Input = InputProps => {
         name={name}
         placeholder={placeholder}
         value={value}
+        onChange={onChange}
         pattern={pattern}
         title={title}
         required

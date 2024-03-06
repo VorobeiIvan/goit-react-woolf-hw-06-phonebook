@@ -1,8 +1,9 @@
+import React from 'react';
 import { ContactsForm, FilterForm } from 'components';
 
 const App = () => {
   return (
-    <div className="wrapper">
+    <div>
       <ContactsForm />
       <FilterForm />
     </div>

@@ -7,11 +7,9 @@ import Button from './Elements/Button/Button.jsx';
 import Input from './Elements/Input/Input';
 import ContactListItem from './FilteSection/ContactListItem/ContactListItem';
 import ContactList from './FilteSection/ContactList/ContactList';
-import "./Elements/Button/Button.css";
-import "./Elements/Form/Form.css";
-import "./Elements/Input/Input.css";
-
-
+import './Elements/Button/Button.css';
+import './Elements/Form/Form.css';
+import './Elements/Input/Input.css';
 
 export {
   ContactsForm,
