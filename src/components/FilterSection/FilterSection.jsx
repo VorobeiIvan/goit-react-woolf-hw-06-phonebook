@@ -1,4 +1,4 @@
-import { ContactList, Form, Input, Section } from 'components';
+import { Section, Form, Input, ContactList } from 'components';
 import { FilterProps } from 'utils';
 
 const FilterForm = ({ contacts }) => {

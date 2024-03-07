@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { Button, Form, Input, Section } from 'components';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addContact } from '../../store/contactsSlice/slice';
 import {
   ButtonSubmitProps,
   NameInputProps,
   PhoneNumberInputProps,
 } from 'utils';
-import { addContact } from 'redux/contactsSlice/slice';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -20,15 +20,15 @@ const ContactForm = () => {
     setNumber('');
   };
 
-  const handleNameChange = event => handleNameChange(event, setName);
-  const handleNumberChange = event => handleNumberChange(event, setNumber);
+  const handleNameChange = event => setName(event.target.value);
+  const handleNumberChange = event => setNumber(event.target.value);
 
   return (
     <Section title="Phonebook">
       <Form onSubmit={handleSubmit}>
         <Input {...NameInputProps} onChange={handleNameChange} />
         <Input {...PhoneNumberInputProps} onChange={handleNumberChange} />
-        <Button {...ButtonSubmitProps} />
+        <Button {...ButtonSubmitProps}>{'Add contact'}</Button>
       </Form>
     </Section>
   );

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { ContactsForm, FilterForm } from 'components';
+import { useState } from 'react';
 
 const App = () => {
   const [contacts, setContacts] = useState([]);

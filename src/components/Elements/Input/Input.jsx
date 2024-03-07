@@ -1,3 +1,4 @@
+import './Input.css';
 const Input = InputProps => {
   const { type, name, value, placeholder, pattern, title, onChange } =
     InputProps;

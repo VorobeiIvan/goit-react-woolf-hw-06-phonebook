@@ -3,7 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const contactsSlice = createSlice({
   name: 'contacts',
   initialState: [],
-  reducers: {
+  reducer: {
     addContact(state, action) {
       state.push(action.payload);
     },
@@ -13,11 +13,8 @@ const contactsSlice = createSlice({
   },
 });
 
-// Отримання редуктора з срізу
 const contactsReducers = contactsSlice.reducer;
 
-// Отримання екшенів з срізу
 const { addContact, deleteContact } = contactsSlice.actions;
 
-// Експортування срізу, редуктора та екшенів
 export { contactsSlice, contactsReducers, addContact, deleteContact };

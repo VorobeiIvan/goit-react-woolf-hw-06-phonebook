@@ -1,24 +1,21 @@
-import ContactsForm from './InputSection/ContactForm';
 import Section from './Elements/Section/Section';
-import App from './App';
 import Form from './Elements/Form/Form';
-import Button from './Elements/Button/Button.jsx';
 import Input from './Elements/Input/Input';
-import ContactListItem from './FilteSection/ContactListItem/ContactListItem';
-import ContactList from './FilteSection/ContactList/ContactList';
-import FilterForm from './FilteSection/FilterSection';
-import './Elements/Button/Button.css';
-import './Elements/Form/Form.css';
-import './Elements/Input/Input.css';
+import Button from './Elements/Button/Button';
+import App from './App';
+import ContactsForm from './InputSection/ContactForm';
+import FilterForm from './FilterSection/FilterSection';
+import ContactList from './FilterSection/ContactList/ContactList';
+import ContactListItem from './FilterSection/ContactListItem/ContactListItem';
 
 export {
-  ContactsForm,
-  App,
   Section,
-  FilterForm,
   Form,
-  Button,
   Input,
-  ContactListItem,
+  Button,
+  App,
+  ContactsForm,
+  FilterForm,
   ContactList,
+  ContactListItem,
 };

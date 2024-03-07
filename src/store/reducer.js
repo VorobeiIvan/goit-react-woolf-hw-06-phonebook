@@ -1,7 +1,7 @@
-import { combineReducers } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
-import { persistReducer } from 'redux-persist';
+import { combineReducers } from 'redux';
 import { contactsReducers } from './contactsSlice/slice';
+import { persistReducer } from 'redux-persist';
 
 const persistConfig = {
   key: 'contacts',

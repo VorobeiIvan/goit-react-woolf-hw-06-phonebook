@@ -3,13 +3,12 @@ import {
   NameInputProps,
   FilterProps,
 } from './InputProps';
-import { ButtonSubmitProps } from './ButtonProps';
-
+import { ButtonSubmitProps, ButtonDeleteProps } from './ButtonProps';
 
 export {
   PhoneNumberInputProps,
   NameInputProps,
   FilterProps,
   ButtonSubmitProps,
-
+  ButtonDeleteProps,
 };

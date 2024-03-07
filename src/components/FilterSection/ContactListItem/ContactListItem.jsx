@@ -1,7 +1,8 @@
 import { Button } from 'components';
-import { ButtonDeleteProps } from 'utils/ButtonProps';
+import { ButtonDeleteProps } from 'utils';
+import './ContactListItem.css';
 
-const ContactListItem = contacts => {
+const ContactListItem = ({ contacts }) => {
   return contacts.map(contact => (
     <li key={contact.id} className="contact-item">
       {contact.name}: {contact.number}

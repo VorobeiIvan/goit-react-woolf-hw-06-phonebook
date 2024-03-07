@@ -1,3 +1,4 @@
+import './Section.css';
 const Section = ({ children, title }) => {
   return (
     <section className="section">
