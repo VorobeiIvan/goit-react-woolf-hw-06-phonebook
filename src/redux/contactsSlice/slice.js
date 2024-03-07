@@ -2,21 +2,22 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const contactsSlice = createSlice({
   name: 'contacts',
-  initialState: { contact: { name: '', number: '' } },
+  initialState: [],
   reducers: {
-    createContact: (state, { payload }) => {
-      state.contact = payload;
+    addContact(state, action) {
+      state.push(action.payload);
     },
-    deleteContact: (state, { payload }) => {
-      state.contact = payload;
-    },
-    updateContact: (state, { payload }) => {
-      state.contact = payload;
+    deleteContact(state, action) {
+      return state.filter(contact => contact.id !== action.payload);
     },
   },
 });
 
-export const contactsReducers = contactsSlice.reducer;
+// Отримання редуктора з срізу
+const contactsReducers = contactsSlice.reducer;
 
-export const { createContact, deleteContact, updateContact } =
-  contactsSlice.actions;
+// Отримання екшенів з срізу
+const { addContact, deleteContact } = contactsSlice.actions;
+
+// Експортування срізу, редуктора та екшенів
+export { contactsSlice, contactsReducers, addContact, deleteContact };

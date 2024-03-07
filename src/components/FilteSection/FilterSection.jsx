@@ -1,13 +1,13 @@
-import { Section, Form, Input, ContactList } from 'components';
+import { ContactList, Form, Input, Section } from 'components';
 import { FilterProps } from 'utils';
 
-const FilterForm = () => {
+const FilterForm = ({ contacts }) => {
   return (
     <Section title="Contacts">
       <Form>
         <Input {...FilterProps} />
       </Form>
-      <ContactList />
+      <ContactList contacts={contacts} />
     </Section>
   );
 };

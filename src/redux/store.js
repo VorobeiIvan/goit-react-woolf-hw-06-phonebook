@@ -1,5 +1,5 @@
 import persistStore from 'redux-persist/es/persistStore';
-import reducer from './reduser';
+import reducer from './reduser'; 
 import { configureStore } from '@reduxjs/toolkit';
 
 const store = configureStore({ reducer });

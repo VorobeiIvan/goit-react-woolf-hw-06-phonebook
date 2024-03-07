@@ -1,10 +1,5 @@
-import React from 'react';
-import { createContactsListItems } from 'utils';
-
-const ContactList = ({ contacts }) => {
-  return (
-    <ul className="contact-list">{createContactsListItems({ contacts })}</ul>
-  );
+const ContactList = ({ children }) => {
+  return <ul className="contact-list">{children}</ul>;
 };
 
 export default ContactList;
