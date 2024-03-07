@@ -12,23 +12,41 @@ const ContactForm = () => {
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const dispatch = useDispatch();
+  const [isSubmitDisabled, setIsSubmitDisabled] = useState(true);
 
   const handleSubmit = event => {
     event.preventDefault();
-    dispatch(addContact({ name, number }));
-    setName('');
-    setNumber('');
+    if (name.trim() && number.trim()) {
+      dispatch(addContact({ name, number }));
+      setName('');
+      setNumber('');
+    }
   };
 
-  const handleNameChange = event => setName(event.target.value);
-  const handleNumberChange = event => setNumber(event.target.value);
+  const handleNameChange = event => {
+    const value = event.target.value;
+    setName(value);
+    setIsSubmitDisabled(!(value.trim() && number.trim()));
+  };
+
+  const handleNumberChange = event => {
+    const value = event.target.value;
+    setNumber(value);
+    setIsSubmitDisabled(!(name.trim() && value.trim()));
+  };
 
   return (
     <Section title="Phonebook">
       <Form onSubmit={handleSubmit}>
-        <Input {...NameInputProps} onChange={handleNameChange} />
-        <Input {...PhoneNumberInputProps} onChange={handleNumberChange} />
-        <Button {...ButtonSubmitProps}>{'Add contact'}</Button>
+        <Input {...NameInputProps} value={name} onChange={handleNameChange} />
+        <Input
+          {...PhoneNumberInputProps}
+          value={number}
+          onChange={handleNumberChange}
+        />
+        <Button {...ButtonSubmitProps} disabled={isSubmitDisabled}>
+          {'Add contact'}
+        </Button>
       </Form>
     </Section>
   );
