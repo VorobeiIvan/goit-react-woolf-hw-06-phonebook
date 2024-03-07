@@ -1,9 +1,9 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { combineReducers, createSlice } from '@reduxjs/toolkit';
 
 const contactsSlice = createSlice({
   name: 'contacts',
   initialState: [],
-  reducer: {
+  reducers: {
     addContact(state, action) {
       state.push(action.payload);
     },
@@ -13,8 +13,10 @@ const contactsSlice = createSlice({
   },
 });
 
-const contactsReducers = contactsSlice.reducer;
-
 const { addContact, deleteContact } = contactsSlice.actions;
+
+const contactsReducers = combineReducers({
+  contacts: contactsSlice.reducer,
+});
 
 export { contactsSlice, contactsReducers, addContact, deleteContact };
